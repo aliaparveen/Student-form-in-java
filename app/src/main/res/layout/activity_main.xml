@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText_fathername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Father name"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_name"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_name"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_name" />
+
+    <EditText
+        android:id="@+id/editTextText_dateofbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Date of birth"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_fathername"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_fathername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_fathername" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_dateofbirth"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_dateofbirth"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_dateofbirth" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test values"
+        android:backgroundTint="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/rg_gender"
+        app:layout_constraintStart_toStartOf="@+id/rg_gender"
+        app:layout_constraintTop_toBottomOf="@+id/rg_gender" />
+
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/button_submit"
+        app:layout_constraintStart_toStartOf="@+id/button_submit"
+        app:layout_constraintTop_toBottomOf="@+id/button_submit" />
+    <TextView
+        android:id="@+id/txt_fathername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Father Name"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/txt_name"
+        app:layout_constraintStart_toStartOf="@+id/txt_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+    <TextView
+        android:id="@+id/txt_dateofbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date of birth:"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/txt_fathername"
+        app:layout_constraintStart_toStartOf="@+id/txt_fathername"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fathername" />
+
+    <TextView
+        android:id="@+id/txt_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="@color/orange"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_dateofbirth"
+        app:layout_constraintStart_toStartOf="@+id/txt_dateofbirth"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dateofbirth" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Developed by Alia (Task1)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
